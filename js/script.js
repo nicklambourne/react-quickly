@@ -1,9 +1,10 @@
 class HelloWorld extends React.Component {
     render() {
-        return React.createElement(
-            'h1',
-            this.props,
-            'Hello ' + this.props.frameworkName + ' world!'
+        return (
+            <div>
+                <h1>1. Hello, world</h1>
+                <h1>2. Hello, world</h1>
+            </div>
         )
     }
 }
@@ -29,4 +30,4 @@ ReactDOM.render(
         })
     ),
     document.getElementById('content')
-)
+);
