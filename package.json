@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "babel clock/jsx --out-dir clock/js"
+        "build": "rm -rf js/*; babel clock/jsx --out-dir clock/js"
     },
     "repository": {
         "type": "git",

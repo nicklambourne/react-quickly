@@ -6,14 +6,14 @@ class Clock extends React.Component {
             currentTime: new Date().toLocaleString()
         };
     }
+
     launchClock() {
         setInterval(() => {
-            console.log('Updating time!');
-            this.setState({
-                currentTime: new Date().toLocaleString()
-            });
+            console.log('Updating...');
+            this.setState({ currentTime: new Date().toLocaleString() });
         }, 1000);
     }
+
     render() {
         console.log('Rendering...');
         return React.createElement(

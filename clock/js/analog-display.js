@@ -1,4 +1,4 @@
-const AnalogDisplay = function AnalogDisplay(props) {
+const AnalogDisplay = function (props) {
     let date = new Date(props.time);
     let dialStyle = {
         position: 'relative',
@@ -17,7 +17,7 @@ const AnalogDisplay = function AnalogDisplay(props) {
         border: '1px solid red',
         width: '40%',
         height: 1,
-        transform: 'rotate(' + (date.getSeconds() / 60 * 360 - 180).toString() + 'deg)',
+        transform: 'rotate(' + (date.getSeconds() / 60 * 360 - 90).toString() + 'deg)',
         transformOrigin: '0% 0%',
         backgroundColor: 'red'
     };
@@ -28,9 +28,9 @@ const AnalogDisplay = function AnalogDisplay(props) {
         border: '1px solid grey',
         width: '40%',
         height: 3,
-        transform: 'rotate(' + (date.getMinutes() / 60 * 360 - 180).toString() + 'deg)',
+        transform: 'rotate(' + (date.getSeconds() / 60 * 360 - 90).toString() + 'deg)',
         transformOrigin: '0% 0%',
-        backgroundColor: 'grey'
+        backgroundColor: 'blue'
     };
     let hourHandStyle = {
         position: 'relative',
@@ -39,7 +39,7 @@ const AnalogDisplay = function AnalogDisplay(props) {
         border: '1px solid grey',
         width: '20%',
         height: 7,
-        transform: 'rotate(' + (date.getHours() / 12 * 360 - 90).toString() + 'deg)',
+        transform: 'rotate(' + (date.getSeconds() / 60 * 360 - 90).toString() + 'deg)',
         transformOrigin: '0% 0%',
         backgroundColor: 'grey'
     };
